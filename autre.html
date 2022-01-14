@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="autre.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section>
+        <h1 class="titre3">Create Your To Do List</h1>
+        <h1 style="font-size: 20px;">Gestion des Différentes cathégories et taches</h1>
+    </section>
+
+
+    <div style="background-color: white; border-radius: 25px;">
+        <input id="addCath" type="text" placeholder="Ajout nouvelle cathégorie" required maxlength="20" value="">
+        <input id="btnAdd" type="button" value="Ok">
+    </div>
+
+    <div class="inputLabel">
+        <input id="addTache" class="Input" type="text" style="margin-top: 10%; width: 280px; height:50px; border-radius: 25px;" placeholder="Ajouter une nouvelle tache" required maxlength="70">
+        <!-- <label class="Label" for="">Ajouter une nouvelle tache</label> -->
+        <!-- <input id="btnAdd" type="button" value="Add a task"> -->
+    </div>
+
+
+    <section class="tableaux">
+        <div>
+            <!--for demo wrap-->
+            <!-- <h1 style="background-color:rgb(217, 255, 222); color: rgb(104, 245, 76); width: 100%;   font-family:'Fjalla One', sans-serif;">
+              Taches a faire
+            </h1> -->
+            <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th class="th" style="color:  rgb(82, 80, 80); font-size: 15px;">Taches à faire</th>
+                            <!-- <th class="th" style="color: black;  font-size: 15px;">Taches déja faite</th> -->
+                            <!-- <th class="th">Taches supprimer</th> -->
+                            <!-- <th>Change</th>
+                            <th>Change %</th> -->
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody id="TacheAFaire">
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 
+        <div style=" background-color:white; border-radius: 10px;">
+            <a id="btnAdd" style="cursor: pointer;">
+                <img src="img/ajouter.png" height="30px;" style=" position: relative; top: 48px; left: 3px; border-radius: 40px;">
+                <input style=" width: 100%; margin-left: 0px;" type="button" value="Ajouter">
+            </a>
+        </div> -->
+
+
+        <div>
+            <!--for demo wrap-->
+            <!-- <h1 style="background-color:rgb(217, 255, 222); color: rgb(104, 245, 76); width: 100%; font-family: 'Fjalla One', sans-serif; ">
+             Taches a faire
+            </h1> -->
+            <div class="tbl-header ">
+                <table cellpadding="0 " cellspacing="0 " border="0 ">
+                    <thead>
+                        <tr>
+                            <th class="th " style="color: rgb(82, 80, 80); font-size: 15px; ">Taches déja faites </th>
+                            <!-- <th class="th " style="color: black; font-size: 15px; ">Taches déja faite</th> -->
+                            <!-- <th class="th ">Taches supprimer</th> -->
+                            <!-- <th>Change</th>
+                            <th>Change %</th> -->
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="tbl-content ">
+                <table cellpadding="0 " cellspacing="0 " border="0 ">
+                    <tbody id="TacheExecute">
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div class="made-with-love ">
+        Made with
+        <i>♥</i> by
+        <a target="_blank " href="# ">Billy 2.0</a>
+    </div>
+
+</body>
+<script src="autre.js "></script>
+
+</html>
